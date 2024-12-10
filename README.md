@@ -1,6 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kunn-Blog
 
-## Getting Started
+## 项目目标
+
+> 💗一点碎碎念💗
+>
+> 2021年用Hexo部署了自己的博客，用的是别人的主题。现在服务器过期了，想趁着重新部署一个博客的同时，用上这几年的技术积累自己写一个个人网站。
+
+- [ ] 界面美观，使用Motion制作页面动画
+- [ ] 支持主题切换，使用Matter.js制作主题切换组件
+- [ ] 支持分类，使用Node自动读取Blog文件夹下的配置，生成博客分类导航栏
+- [ ] 支持博客目录，使用Node自动读取Blog文件夹下的配置，生成分类内跳转侧边栏
+- [ ] 支持文章内目录，使用Kramed等库，读取Markdown文件，解析标题，生成文档内目录
+- [ ] 博客应该使用服务端渲染
+
+## 本地调试
 
 First, run the development server:
 
@@ -16,21 +29,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 参考文档
+1. [Motion](https://motion.dev/) 简单易上手的动画库
+2. [Matter.js](https://brm.io/matter-js/) 网页端2D物理引擎
+3. [kramed](https://github.com/GitbookIO/kramed) 强大且高效的Markdown解析器
