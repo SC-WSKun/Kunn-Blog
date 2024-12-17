@@ -22,6 +22,12 @@ export default {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
       },
+      borderColor:{
+        tan: "var(--tan)",
+      },
+      backgroundImage: {
+        "nav-brown": "linear-gradient(to top, var(--tan), var(--beige))"
+      }
     },
   },
   plugins: [],

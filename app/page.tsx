@@ -1,8 +1,14 @@
 
+"use client"
+
 export default function Home() {
   return (
     <div>
-      11
+      <Clock />
     </div>
-  );
+  )
+}
+
+function Clock() {
+  return <canvas id="clock" width="500" height="500"></canvas>
 }
