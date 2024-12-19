@@ -12,6 +12,7 @@
 - [ ] 支持博客目录，使用Node自动读取Blog文件夹下的配置，生成分类内跳转侧边栏
 - [ ] 支持文章内目录，使用Kramed等库，读取Markdown文件，解析标题，生成文档内目录
 - [ ] 博客应该使用服务端渲染
+- [x] 提交规范，Husky + Lint-staged + Prettier
 
 ## 本地调试
 
@@ -30,6 +31,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## 参考文档
+
 1. [Motion](https://motion.dev/) 简单易上手的动画库
 2. [Matter.js](https://brm.io/matter-js/) 网页端2D物理引擎
 3. [kramed](https://github.com/GitbookIO/kramed) 强大且高效的Markdown解析器
