@@ -3,17 +3,18 @@ import Link from "next/link";
 import { motion } from "motion/react"
 import { aestera } from "@/app/fonts";
 import { ReactNode } from "react";
+import Contact from "./Contact";
 export default function Header() {
   return (
     <div className="flex h-28 w-full flex-row items-center justify-around gap-40 bg-beige px-20 font-mono text-xl border-b-2 border-tan">
       <p className={aestera.className + " text-2xl"}>Kunn Blog</p>
-      <div className="grid grid-cols-4 h-full grow ">
+      <div className="grid grid-cols-4 h-full grow">
         <NavLink href={"/"} >Home</NavLink>
         <NavLink href={"/blog"}>Blog</NavLink>
         <NavLink href={"/photo"} >Photo</NavLink>
         <NavLink href={"/project"} >Project</NavLink>
       </div>
-      <div>contact component</div>
+      <Contact /> 
     </div>
   );
 }

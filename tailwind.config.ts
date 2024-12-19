@@ -27,6 +27,9 @@ export default {
       },
       backgroundImage: {
         "nav-brown": "linear-gradient(to top, var(--tan), var(--beige))"
+      },
+      contrast: {
+        3000: '30',
       }
     },
   },
