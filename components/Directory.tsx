@@ -13,7 +13,7 @@ type DirectoryType = {
 	articleList: (Article | DirectoryType)[];
 };
 
-const isDirectory = (item: unknown) => {
+const isDirectory = (item: unknown): item is DirectoryType => {
 	// 确保 item 是一个对象且不为 null
 	if (typeof item !== "object" || item === null) {
 		return false;
@@ -47,7 +47,7 @@ export const Directory: React.FC = () => {
 			<div className="article">
 				<p className="article__title">{article.title}</p>
 				<p className="article__release-time">
-					{formatTime(article.releaseTime)}
+					{formatTime(article.releaseTime || 0)}
 				</p>
 			</div>
 		);
@@ -59,13 +59,13 @@ export const Directory: React.FC = () => {
 			setShowSublist((preState) => !preState);
 		};
 		return (
-			<div className="directory">
-				<div className="directory-item">
+			<div className="directory" onClick={toggleShowSublist}>
+				<div className="directory__item">
 					<p>{directory.title}</p>
-					<ArrowDown onClick={toggleShowSublist} />
+					<ArrowDown />
 				</div>
 				{showSublist &&
-					!!directory.articleList &&
+					directory.articleList &&
 					RenderDirectoryList(directory.articleList)}
 			</div>
 		);
@@ -79,6 +79,7 @@ export const Directory: React.FC = () => {
 			if (isDirectory(item)) {
 				return RenderDirectory(item);
 			}
+			return null;
 		});
 	};
 
